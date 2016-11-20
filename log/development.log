@@ -1,0 +1,508 @@
+
+
+Started GET "/cars" for 127.0.0.1 at 2016-11-20 10:07:38 -0300
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.2ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.3ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (48.8ms)
+  [1m[36m (93.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (74.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCars (20161120130657)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "year" date, "color" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161120130657"]]
+  [1m[35m (84.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/cars" for 127.0.0.1 at 2016-11-20 10:22:22 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CarsController#index as HTML
+  [1m[35mCar Load (0.2ms)[0m  SELECT "cars".* FROM "cars"
+  Rendered cars/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 1191ms (Views: 1165.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cars.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-20 10:22:23 -0300
+
+
+Started GET "/assets/scaffolds.self-d5ac8baf89f74068d3fefbdb1e2f99a4aa502a3321fe58498c52749233e84fa4.css?body=1" for 127.0.0.1 at 2016-11-20 10:22:23 -0300
+
+
+Started GET "/assets/cars.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-20 10:22:23 -0300
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2016-11-20 10:22:31 -0300
+Processing by CarsController#new as HTML
+  Rendered cars/_form.html.erb (173.8ms)
+  Rendered cars/new.html.erb within layouts/application (177.4ms)
+Completed 200 OK in 200ms (Views: 192.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2016-11-20 10:22:35 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"beKPTjc9lcoTlZdhjQtpte54SvKgZTzoS4fHv6sbk48vB8rb/PUDd3Lq3uzhfP7PlUUAX3+kKMskq8ev0fyoAA==", "car"=>{"name"=>"", "year(1i)"=>"2016", "year(2i)"=>"11", "year(3i)"=>"20", "color"=>""}, "commit"=>"Create Car"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered cars/_form.html.erb (3.0ms)
+  Rendered cars/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 19ms (Views: 15.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2016-11-20 10:22:48 -0300
+Processing by CarsController#index as HTML
+  [1m[36mCar Load (0.3ms)[0m  [1mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2016-11-20 10:22:50 -0300
+Processing by CarsController#new as HTML
+  Rendered cars/_form.html.erb (4.3ms)
+  Rendered cars/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 28ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2016-11-20 10:22:51 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6x9gKinGNHMJhddn7yOQ96D6rd3B8ya+VIR+/5yCyIOp+iW/4g6izmj6nuqDVAeN28fncB4yMp07qH7v5mXzDA==", "car"=>{"name"=>"", "year(1i)"=>"2016", "year(2i)"=>"11", "year(3i)"=>"20", "color"=>""}, "commit"=>"Create Car"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered cars/_form.html.erb (5.1ms)
+  Rendered cars/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2016-11-20 10:23:02 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vk5wAz1utmzCy6V0jwlxNjw4hJK6sNyRG3ak8KoXmQ0UqzWW9qYg0aO07PnjfuZMRwXOP2VxyLJ0WqTg0PCigg==", "car"=>{"name"=>"Palio", "year(1i)"=>"2016", "year(2i)"=>"11", "year(3i)"=>"20", "color"=>"Branco"}, "commit"=>"Create Car"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cars" ("name", "color", "year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Palio"], ["color", "Branco"], ["year", "2016-11-20"], ["created_at", "2016-11-20 13:23:02.681071"], ["updated_at", "2016-11-20 13:23:02.681071"]]
+  [1m[35m (171.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/cars/1
+Completed 302 Found in 178ms (ActiveRecord: 171.6ms)
+
+
+Started GET "/cars/1" for 127.0.0.1 at 2016-11-20 10:23:02 -0300
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.2ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered cars/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 47ms (Views: 13.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2016-11-20 10:23:08 -0300
+Processing by CarsController#index as HTML
+  [1m[35mCar Load (0.2ms)[0m  SELECT "cars".* FROM "cars"
+  Rendered cars/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+  [1m[36mCar Load (1.4ms)[0m  [1mSELECT "cars".* FROM "cars"[0m
+  [1m[35mCar Load (0.2ms)[0m  SELECT "cars".* FROM "cars"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "cars" ("name", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Gol"], ["color", "Preto"], ["created_at", "2016-11-20 13:37:42.873857"], ["updated_at", "2016-11-20 13:37:42.873857"]]
+  [1m[36m (73.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mCar Load (0.2ms)[0m  SELECT "cars".* FROM "cars"
+  [1m[36mCar Load (0.3ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "cars" SET "name" = ?, "updated_at" = ? WHERE "cars"."id" = ?[0m  [["name", "Ferrari"], ["updated_at", "2016-11-20 13:44:53.550669"], ["id", 1]]
+  [1m[35m (79.6ms)[0m  commit transaction
+
+
+Started GET "/cars" for 127.0.0.1 at 2016-11-20 10:51:31 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CarsController#index as HTML
+  [1m[35mCar Load (0.1ms)[0m  SELECT "cars".* FROM "cars"
+  Rendered cars/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 193ms (Views: 184.8ms | ActiveRecord: 0.4ms)
+  [1m[36mCar Load (1.5ms)[0m  [1mSELECT "cars".* FROM "cars"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "cars" ("name", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "onix"], ["color", "Vermelho"], ["created_at", "2016-11-20 13:52:30.878557"], ["updated_at", "2016-11-20 13:52:30.878557"]]
+  [1m[35m (76.4ms)[0m  commit transaction
+  [1m[36mCar Load (0.2ms)[0m  [1mSELECT "cars".* FROM "cars"[0m
+  [1m[35mCar Load (0.3ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT 1  [["id", 3]]
+
+
+Started GET "/cars" for 127.0.0.1 at 2016-11-20 10:54:55 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CarsController#index as HTML
+  [1m[35mCar Load (0.2ms)[0m  SELECT "cars".* FROM "cars"
+  Rendered cars/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 199ms (Views: 189.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2016-11-20 11:16:17 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.6) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.6) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.4ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.2ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/aluno109/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (36.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddEngineToCars (20161120141518)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "cars" ADD "engine" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20161120141518"]]
+  [1m[36m (77.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/cars" for 127.0.0.1 at 2016-11-20 11:17:10 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CarsController#index as HTML
+  [1m[35mCar Load (0.2ms)[0m  SELECT "cars".* FROM "cars"
+  Rendered cars/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 198ms (Views: 189.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/cars.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-20 11:17:10 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-20 11:17:10 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-11-20 11:17:10 -0300
+
+
+Started GET "/assets/scaffolds.self-d5ac8baf89f74068d3fefbdb1e2f99a4aa502a3321fe58498c52749233e84fa4.css?body=1" for 127.0.0.1 at 2016-11-20 11:17:10 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-11-20 11:17:10 -0300
+
+
+Started GET "/assets/cars.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-20 11:17:11 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-20 11:17:11 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-20 11:17:11 -0300
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2016-11-20 11:17:14 -0300
+Processing by CarsController#new as HTML
+  Rendered cars/_form.html.erb (17.3ms)
+  Rendered cars/new.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2016-11-20 11:17:20 -0300
+Processing by CarsController#index as HTML
+  [1m[36mCar Load (0.2ms)[0m  [1mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2016-11-20 11:18:57 -0300
+Processing by CarsController#index as HTML
+  [1m[35mCar Load (0.3ms)[0m  SELECT "cars".* FROM "cars"
+  Rendered cars/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/cars.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-20 11:18:57 -0300
+
+
+Started GET "/assets/scaffolds.self-d5ac8baf89f74068d3fefbdb1e2f99a4aa502a3321fe58498c52749233e84fa4.css?body=1" for 127.0.0.1 at 2016-11-20 11:18:57 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-11-20 11:18:57 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-20 11:18:57 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-20 11:18:57 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-20 11:18:57 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-11-20 11:18:57 -0300
+
+
+Started GET "/assets/cars.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-20 11:18:57 -0300
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2016-11-20 11:19:07 -0300
+Processing by CarsController#new as HTML
+  Rendered cars/_form.html.erb (2.5ms)
+  Rendered cars/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2016-11-20 11:19:09 -0300
+Processing by CarsController#index as HTML
+  [1m[36mCar Load (0.2ms)[0m  [1mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2016-11-20 11:20:11 -0300
+Processing by CarsController#new as HTML
+  Rendered cars/_form.html.erb (3.7ms)
+  Rendered cars/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2016-11-20 11:28:56 -0300
+Processing by CarsController#new as HTML
+  Rendered cars/_form.html.erb (3.8ms)
+  Rendered cars/new.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 25ms (Views: 18.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/cars.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-20 11:28:56 -0300
+
+
+Started GET "/assets/scaffolds.self-d5ac8baf89f74068d3fefbdb1e2f99a4aa502a3321fe58498c52749233e84fa4.css?body=1" for 127.0.0.1 at 2016-11-20 11:28:56 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-11-20 11:28:56 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-20 11:28:56 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-20 11:28:56 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-20 11:28:56 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-11-20 11:28:56 -0300
+
+
+Started GET "/assets/cars.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-20 11:28:56 -0300
+
+
+Started POST "/cars" for 127.0.0.1 at 2016-11-20 11:29:44 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZnMq5swNmeoHwftorZ6G0KALxtyGnkVioG6yAZ2aZq0klm9zB8UPV2a+suXB6RGq2zaMcVlfUUHPQrIR531dIg==", "car"=>{"name"=>"Uno", "year(1i)"=>"2016", "year(2i)"=>"11", "year(3i)"=>"20", "color"=>"Cinza", "engine"=>"2.0"}, "commit"=>"Create Car"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "cars" ("name", "color", "engine", "year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Uno"], ["color", "Cinza"], ["engine", "2.0"], ["year", "2016-11-20"], ["created_at", "2016-11-20 14:29:44.367998"], ["updated_at", "2016-11-20 14:29:44.367998"]]
+  [1m[35m (118.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/cars/4
+Completed 302 Found in 124ms (ActiveRecord: 119.0ms)
+
+
+Started GET "/cars/4" for 127.0.0.1 at 2016-11-20 11:29:44 -0300
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.2ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered cars/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 11.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2016-11-20 11:29:49 -0300
+Processing by CarsController#index as HTML
+  [1m[35mCar Load (0.2ms)[0m  SELECT "cars".* FROM "cars"
+  Rendered cars/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2016-11-20 11:36:44 -0300
+Processing by CarsController#new as HTML
+  Rendered cars/_form.html.erb (4.6ms)
+  Rendered cars/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 30ms (Views: 21.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2016-11-20 11:36:52 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qHKko/Ic+5TnYvKkL7OWPSdEw1e/p0RKRyOw1IchE+Lql+E2OdRtKYYduylDxAFHXHmJ+mBmUGkoD7DE/cYobQ==", "car"=>{"name"=>"teste", "year(1i)"=>"2016", "year(2i)"=>"11", "year(3i)"=>"20", "color"=>"teste", "engine"=>"teste"}, "commit"=>"Create Car"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "cars" ("name", "color", "engine", "year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "teste"], ["color", "teste"], ["engine", "teste"], ["year", "2016-11-20"], ["created_at", "2016-11-20 14:36:52.235521"], ["updated_at", "2016-11-20 14:36:52.235521"]]
+  [1m[36m (135.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/cars/5
+Completed 302 Found in 141ms (ActiveRecord: 135.8ms)
+
+
+Started GET "/cars/5" for 127.0.0.1 at 2016-11-20 11:36:52 -0300
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mCar Load (0.2ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered cars/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2016-11-20 11:37:02 -0300
+Processing by CarsController#index as HTML
+  [1m[36mCar Load (0.4ms)[0m  [1mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2016-11-20 11:43:30 -0300
+Processing by CarsController#new as HTML
+  Rendered cars/_form.html.erb (4.5ms)
+  Rendered cars/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2016-11-20 11:43:42 -0300
+Processing by CarsController#new as HTML
+  Rendered cars/_form.html.erb (5.0ms)
+  Rendered cars/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cars.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-20 11:43:42 -0300
+
+
+Started GET "/assets/scaffolds.self-d5ac8baf89f74068d3fefbdb1e2f99a4aa502a3321fe58498c52749233e84fa4.css?body=1" for 127.0.0.1 at 2016-11-20 11:43:42 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-11-20 11:43:42 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-20 11:43:42 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-20 11:43:42 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-20 11:43:42 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-11-20 11:43:42 -0300
+
+
+Started GET "/assets/cars.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-20 11:43:42 -0300
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2016-11-20 11:43:57 -0300
+Processing by CarsController#new as HTML
+  Rendered cars/_form.html.erb (5.0ms)
+  Rendered cars/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cars.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-11-20 11:43:57 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2016-11-20 11:43:57 -0300
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2016-11-20 11:43:57 -0300
+
+
+Started GET "/assets/scaffolds.self-d5ac8baf89f74068d3fefbdb1e2f99a4aa502a3321fe58498c52749233e84fa4.css?body=1" for 127.0.0.1 at 2016-11-20 11:43:57 -0300
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2016-11-20 11:43:57 -0300
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-11-20 11:43:57 -0300
+
+
+Started GET "/assets/cars.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-11-20 11:43:57 -0300
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-11-20 11:43:57 -0300
